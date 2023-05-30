@@ -24,10 +24,10 @@ function create(req, res, next) {
 
 
 function update(req, res, next) {
-  const { data: { id,name, description,price,image_url } = {} } = req.body;
+const { data: { name, description, price, image_url } = {} } = req.body;  
   const dishId = req.params.dishId 
 
-  res.locals.dish.id = id;
+//   res.locals.dish.id = id;
   res.locals.dish.name = name;
   res.locals.dish.description = description;
   res.locals.dish.price = price;
